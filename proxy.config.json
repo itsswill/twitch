@@ -1,0 +1,21 @@
+{
+  "/user/*": {
+    "target": "https://id.twitch.tv",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/user": ""
+    }
+  },
+
+  "/api/*": {
+    "target": "https://api.twitch.tv",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}
